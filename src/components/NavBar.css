@@ -1,0 +1,150 @@
+/* Navbar Styling */
+.navbar {
+  background-color: black;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1500px;
+  height: 80px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.nav-logo {
+  color: #74ad8a;
+  font-size: 2rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.nav-logo .icon {
+  width: 3rem;
+  height: 3rem;
+  margin-left: 10px;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  margin: 0 1rem;
+}
+
+.nav-links {
+  color: #74ad8a;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  display: block;
+}
+
+.nav-links:hover,
+.nav-item .active {
+  border-bottom: 3px solid #74ad8a;
+}
+
+.nav-icon {
+  display: none;
+}
+
+.upload-section,
+.search-box {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.upload-label,
+.search-box input {
+  padding: 8px;
+  border: 1px solid #74ad8a;
+  border-radius: 15px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.upload-label {
+  color: #74ad8a;
+}
+
+.search-box input {
+  border-radius: 20px;
+}
+
+/* Media queries for smaller screens */
+@media screen and (max-width: 960px) {
+  .nav-menu {
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 80px;
+    left: -100%;
+    background: #043c2c;
+    opacity: 0;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+
+  .nav-menu.active {
+    left: 0;
+    opacity: 1;
+  }
+
+  .nav-item {
+    margin: 1rem 0;
+    text-align: center;
+  }
+
+  .nav-links {
+    padding: 1.5rem;
+    width: 100%;
+    display: block;
+  }
+
+  .nav-icon {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+
+  .upload-section,
+  .search-box {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .nav-logo {
+    font-size: 1.5rem;
+  }
+
+  .nav-logo .icon {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .nav-links {
+    font-size: 1rem;
+  }
+}
