@@ -47,10 +47,10 @@ const Cardboard = () => {
         alt="Description of the image"
       />
       
-      <p id='title'> Make a positive impact by embracing the reuse and recycling of cardboard</p>
+      <p id='title'>  positive impact by embracing the reuse and recycling of cardboard</p>
       <br />
       <div className='one'>
-        <p className="paragraph1">Championing the recycling and repurposing of cardboard is a noble endeavor that unfolds a tale of environmental stewardship. Each folded box given a second life not only lessens our ecological footprint but also crafts a narrative of responsible living. By infusing discarded cardboard with purpose, we contribute to a vibrant cycle of sustainability, breathing vitality into our planet. Embracing this mindful approach isn't just an act; it's a celebration of conscientious choices that resonate far beyond our immediate surroundings, fostering a brighter, more harmonious world for generations to come<br/></p>
+        <p className="paragraph1"> recycling and repurposing of cardboard is a noble endeavor that unfolds a tale of environmental stewardship. Each folded box given a second life not only lessens our ecological footprint but also crafts a narrative of responsible living. By infusing discarded cardboard with purpose, we contribute to a vibrant cycle of sustainability, breathing vitality into our planet. Embracing this mindful approach isn't just an act; it's a celebration of conscientious choices that resonate far beyond our immediate surroundings, fostering a brighter, more harmonious world for generations to come<br/></p>
         <p id='why'> <b><u><br/>5 Creative ways</u></b></p>
         <br></br>
         <p className="paragraph"><b>Spray Paint Can Holder </b><br/><br/></p> 
